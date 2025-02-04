@@ -13,7 +13,7 @@ const port = process.env.PORT;
 const oauth2Client = new OAuth2Client(
   process.env.GOOGLE_CLIENT_ID,
   process.env.GOOGLE_CLIENT_SECRET,
-  `http://localhost:${port}/auth/google/callback`
+  `https://a-simple-chatbot-x19a.onrender.com/auth/google/callback`
 );
 
 app.use(cors());
