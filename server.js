@@ -7,7 +7,7 @@ import { OAuth2Client } from "google-auth-library";
 dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 // OAuth Client Setup
 const oauth2Client = new OAuth2Client(
